@@ -9,7 +9,7 @@ const pg=require("pg");
 ]*/
 
 const client=new pg.Client({
-    connectionString:process.env.DATABASE_URI
+    connectionString:"postgresql://samrudh3125%40gmail.com:y74PKDNtFEXx@ep-small-mode-a13b18pz.ap-southeast-1.aws.neon.tech/Ocs?sslmode=require"
 });
 
 const createTable=async function(){
