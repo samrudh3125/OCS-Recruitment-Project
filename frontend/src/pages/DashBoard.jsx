@@ -11,7 +11,6 @@ const DashBoard = () => {
   const [users,setUsers]=useState([]);
 
   useEffect(() => {
-    console.log("hello")
     const getUsers=async()=>{
       const response=await axios.get("https://ocs-server.onrender.com/users",{
         params:{
