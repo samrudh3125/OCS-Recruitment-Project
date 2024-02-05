@@ -7,10 +7,6 @@ const app=express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/",function(req,res){
-    res.send("hello");
-});
-
 app.post("/signin",async function(req,res){
     const userId=req.body.userId;
     const password=req.body.password;
